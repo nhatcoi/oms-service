@@ -1,4 +1,4 @@
-package com.nhatdev.ecommerce.dto;
+package com.nhatdev.product.handler;
 
 import java.util.Map;
 

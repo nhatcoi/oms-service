@@ -5,7 +5,7 @@ import com.nhatdev.ecommerce.dto.CustomerRequest;
 import com.nhatdev.ecommerce.dto.CustomerResponse;
 import com.nhatdev.ecommerce.mapper.CustomerMapper;
 import com.nhatdev.ecommerce.repository.CustomerRepository;
-import com.nhatdev.ecommerce.exception.CustomerNotFoundException;
+import com.nhatdev.ecommerce.handler.CustomerNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
