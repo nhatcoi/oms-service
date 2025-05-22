@@ -3,7 +3,6 @@ package com.nhatdev.ecommerce.orderline;
 import com.nhatdev.ecommerce.order.Order;
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 @AllArgsConstructor
 @NoArgsConstructor
