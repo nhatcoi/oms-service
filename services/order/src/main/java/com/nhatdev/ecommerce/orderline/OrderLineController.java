@@ -20,7 +20,7 @@ public class OrderLineController {
     public ResponseEntity<List<OrderLineResponse>> findByOrderId(
             @PathVariable("order-id") Integer orderId
     ) {
-        return ResponseEntity.of(service.findAllByOrderId(orderId))
+        return ResponseEntity.ok(service.findAllByOrderId(orderId));
     }
 
 }

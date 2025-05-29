@@ -1,6 +1,5 @@
 package com.nhatdev.ecommerce.controller;
 
-import com.nhatdev.ecommerce.customer.Customer;
 import com.nhatdev.ecommerce.dto.CustomerRequest;
 import com.nhatdev.ecommerce.service.CustomerService;
 import jakarta.validation.Valid;
