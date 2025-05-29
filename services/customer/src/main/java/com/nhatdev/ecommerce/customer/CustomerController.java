@@ -1,14 +1,12 @@
-package com.nhatdev.ecommerce.controller;
+package com.nhatdev.ecommerce.customer;
 
 import com.nhatdev.ecommerce.dto.CustomerRequest;
-import com.nhatdev.ecommerce.service.CustomerService;
+import com.nhatdev.ecommerce.customer.service.CustomerService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/customers")

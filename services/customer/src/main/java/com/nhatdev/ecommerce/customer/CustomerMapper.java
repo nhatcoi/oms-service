@@ -1,6 +1,5 @@
-package com.nhatdev.ecommerce.mapper;
+package com.nhatdev.ecommerce.customer;
 
-import com.nhatdev.ecommerce.customer.Customer;
 import com.nhatdev.ecommerce.dto.CustomerRequest;
 import com.nhatdev.ecommerce.dto.CustomerResponse;
 import org.springframework.stereotype.Service;

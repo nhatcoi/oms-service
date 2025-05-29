@@ -1,10 +1,10 @@
-package com.nhatdev.ecommerce.service;
+package com.nhatdev.ecommerce.customer.service;
 
 import com.nhatdev.ecommerce.customer.Customer;
 import com.nhatdev.ecommerce.dto.CustomerRequest;
 import com.nhatdev.ecommerce.dto.CustomerResponse;
-import com.nhatdev.ecommerce.mapper.CustomerMapper;
-import com.nhatdev.ecommerce.repository.CustomerRepository;
+import com.nhatdev.ecommerce.customer.CustomerMapper;
+import com.nhatdev.ecommerce.customer.CustomerRepository;
 import com.nhatdev.ecommerce.handler.CustomerNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang.StringUtils;

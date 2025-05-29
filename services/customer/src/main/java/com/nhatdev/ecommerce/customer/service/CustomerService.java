@@ -1,4 +1,4 @@
-package com.nhatdev.ecommerce.service;
+package com.nhatdev.ecommerce.customer.service;
 
 import com.nhatdev.ecommerce.customer.Customer;
 import com.nhatdev.ecommerce.dto.CustomerRequest;

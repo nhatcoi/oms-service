@@ -1,10 +1,8 @@
-package com.nhatdev.ecommerce.notificaiton;
-
-import com.nhatdev.ecommerce.payment.PaymentMethod;
+package com.nhatdev.ecommerce.kafka.payment;
 
 import java.math.BigDecimal;
 
-public record PaymentNotificationRequest(
+public record PaymentConfirmation(
         String orderReference,
         BigDecimal amount,
         PaymentMethod paymentMethod,
