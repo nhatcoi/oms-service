@@ -9,20 +9,25 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
         <module name="discovery" />
+        <module name="gateway" />
       </profile>
-      <profile name="Annotation profile for product" enabled="true">
+      <profile name="Annotation profile for notification" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
+        <module name="notification" />
         <module name="product" />
         <module name="payment" />
         <module name="ecommerce" />
         <module name="customer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ecommerce (1)" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -30,6 +35,9 @@
       <module name="customer" options="-parameters" />
       <module name="discovery" options="-parameters" />
       <module name="ecommerce" options="-parameters" />
+      <module name="ecommerce (1)" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="notification" options="-parameters" />
       <module name="payment" options="-parameters" />
       <module name="product" options="-parameters" />
     </option>

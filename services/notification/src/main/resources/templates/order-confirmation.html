@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Xác nhận đơn hàng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .details {
+            margin-top: 20px;
+        }
+        .details p {
+            font-size: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #dddddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .total {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Xác nhận đơn hàng</h2>
+    <p>Xin chào <strong th:text="${customerName}">Tên khách hàng</strong>,</p>
+    <div class="details">
+        <p>Mã đơn hàng của bạn là: <strong th:text="${orderReference}">ORD123</strong></p>
+
+        <p>Dưới đây là danh sách sản phẩm bạn đã đặt mua:</p>
+        <table>
+            <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Đơn giá</th>
+                <th>Thành tiền</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="product : ${products}">
+                <td th:text="${product.name}">Sản phẩm A</td>
+                <td th:text="${product.quantity}">1</td>
+                <td th:text="${product.price}">100000</td>
+                <td th:text="${#numbers.formatDecimal(product.price * product.quantity, 0, 'POINT', 0, 'COMMA')}">100000</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <p class="total">Tổng tiền: <span th:text="${totalAmount}">0</span> VND</p>
+    </div>
+
+    <p>Cảm ơn bạn đã mua sắm với chúng tôi!</p>
+
+    <div class="footer">
+        <p>Đây là email tự động, vui lòng không phản hồi lại.</p>
+    </div>
+</div>
+</body>
+</html>

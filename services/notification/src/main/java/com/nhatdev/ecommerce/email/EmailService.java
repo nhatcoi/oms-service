@@ -37,7 +37,7 @@ public class EmailService {
         MimeMessage mimeMessage = mailSender.createMimeMessage();
         MimeMessageHelper messageHelper =
                 new MimeMessageHelper(mimeMessage, MimeMessageHelper.MULTIPART_MODE_RELATED, StandardCharsets.UTF_8.name());
-        messageHelper.setTo(destinationEmail);
+        messageHelper.setFrom("vnhat.dev@gmail.com");
 
         final String templateName = EmailTemplates.PAYMENT_CONFIRMATION.getTemplate();
 
